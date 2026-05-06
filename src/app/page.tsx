@@ -3,6 +3,13 @@
 import { motion } from "framer-motion";
 
 export default function Home() {
+  const cumbres = [
+    { id: "01", title: "MARKETING", desc: "ESTRATEGIA INTEGRAL" },
+    { id: "02", title: "PRODUCCIÓN AUDIOVISUAL", desc: "NARRATIVA VISUAL" },
+    { id: "03", title: "DESARROLLO WEB", desc: "ARQUITECTURA DIGITAL" },
+    { id: "04", title: "MARKETING DIGITAL TÉCNICO", desc: "SEO / SEM" },
+  ];
+
   return (
     <main className="min-h-screen bg-buey-dark text-buey-white flex flex-col items-center selection:bg-buey-orange selection:text-buey-dark overflow-x-hidden font-sans">
       
@@ -73,16 +80,20 @@ export default function Home() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="space-y-16"
+          className="space-y-12"
         >
-          <h2 className="text-xs tracking-[0.5em] uppercase opacity-50 font-mono">CUMBRES</h2>
+          <h2 className="text-xs tracking-[0.5em] uppercase opacity-50 font-mono mb-16">CUMBRES</h2>
           
-          <div className="group cursor-crosshair">
-            <p className="font-mono text-sm md:text-base tracking-wider flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-              <span className="text-buey-orange font-bold">01. REVISTA ZORRO</span>
-              <span className="opacity-30 hidden md:block">//</span>
-              <span className="opacity-60 uppercase">PRODUCCIÓN EDITORIAL</span>
-            </p>
+          <div className="space-y-8">
+            {cumbres.map((item) => (
+              <div key={item.id} className="group cursor-crosshair border-b border-white/5 pb-8 last:border-0">
+                <p className="font-mono text-sm md:text-base tracking-wider flex flex-col md:flex-row md:items-center gap-2 md:gap-4 transition-all group-hover:translate-x-2">
+                  <span className="text-buey-orange font-bold">{item.id}. {item.title}</span>
+                  <span className="opacity-30 hidden md:block">//</span>
+                  <span className="opacity-60 uppercase">{item.desc}</span>
+                </p>
+              </div>
+            ))}
           </div>
         </motion.div>
       </section>
