@@ -1,65 +1,99 @@
-import Image from "next/image";
+"use client";
+
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-buey-dark text-buey-white flex flex-col items-center selection:bg-buey-orange selection:text-buey-dark overflow-x-hidden font-sans">
+      
+      {/* Hero Section */}
+      <section className="h-screen flex items-center justify-center w-full px-6">
+        <motion.h1
+          initial={{ opacity: 0, letterSpacing: "-0.05em" }}
+          animate={{ opacity: 1, letterSpacing: "-0.02em" }}
+          transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
+          className="text-7xl md:text-9xl font-black text-center"
+        >
+          BUEY SHERPA
+        </motion.h1>
+      </section>
+
+      {/* About Section */}
+      <section className="w-full border-t border-buey-white/10 py-32 px-10 bg-buey-dark">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl font-black leading-tight">
+              EL BUEY <br />
+              <span className="text-buey-orange">//</span> EL GUÍA
+            </h2>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="flex flex-col justify-center"
+          >
+            <p className="max-w-md text-lg leading-relaxed text-buey-white/80">
+              En la economía de la atención, la mayoría se pierde en la superficie. 
+              Nosotros operamos en la altura. BUEY SHERPA nace de una dualidad necesaria: 
+              la potencia para ejecutar lo complejo y la visión para no perder el rumbo.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Manifesto Section */}
+      <section className="w-full px-6 py-32 flex justify-center border-y border-buey-white/5">
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
+          <p className="text-xl md:text-2xl font-light tracking-[0.4em] text-buey-orange uppercase leading-relaxed">
+            POTENCIA DIRIGIDA.<br />
+            VISIÓN INTEGRAL.<br />
+            HACIA LA CIMA.
           </p>
+        </motion.div>
+      </section>
+
+      {/* CUMBRES Section */}
+      <section className="w-full max-w-4xl px-6 py-40 md:py-64">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="space-y-16"
+        >
+          <h2 className="text-xs tracking-[0.5em] uppercase opacity-50 font-mono">CUMBRES</h2>
+          
+          <div className="group cursor-crosshair">
+            <p className="font-mono text-sm md:text-base tracking-wider flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+              <span className="text-buey-orange font-bold">01. REVISTA ZORRO</span>
+              <span className="opacity-30 hidden md:block">//</span>
+              <span className="opacity-60 uppercase">PRODUCCIÓN EDITORIAL</span>
+            </p>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Footer Minimalista */}
+      <footer className="w-full p-12 mt-auto flex justify-center">
+        <div className="font-mono text-[10px] tracking-[0.3em] opacity-20 uppercase">
+          BS © 2024
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </footer>
+
+    </main>
   );
 }
