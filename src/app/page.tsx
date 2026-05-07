@@ -48,9 +48,7 @@ export default function Home() {
             className="flex flex-col justify-center"
           >
             <p className="max-w-md text-lg leading-relaxed text-buey-white/80">
-              En la economía de la atención, la mayoría se pierde en la superficie. 
-              Nosotros operamos en la altura. BUEY SHERPA nace de una dualidad necesaria: 
-              la potencia para ejecutar lo complejo y la visión para no perder el rumbo.
+              Fuerza para el ascenso, sabiduría para la ruta. Creemos en el trabajo silencioso que produce resultados exponenciales. Aseguramos la constancia en cada etapa del proyecto; aportamos la creatividad y la técnica para alcanzar las cumbres más elevadas. Tu meta es nuestra dirección; el camino lo recorremos juntos.
             </p>
           </motion.div>
         </div>
