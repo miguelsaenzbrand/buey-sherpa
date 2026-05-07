@@ -45,10 +45,16 @@ export default function Home() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="flex flex-col justify-center"
+            className="flex flex-col justify-center space-y-6"
           >
-            <p className="max-w-md text-lg leading-relaxed text-buey-white/80">
-              Fuerza para el ascenso, sabiduría para la ruta. Creemos en el trabajo silencioso que produce resultados exponenciales. Aseguramos la constancia en cada etapa del proyecto; aportamos la creatividad y la técnica para alcanzar las cumbres más elevadas. Tu meta es nuestra dirección; el camino lo recorremos juntos.
+            <h3 className="text-2xl md:text-3xl font-semibold leading-tight text-buey-white">
+              Fuerza para el ascenso, sabiduría para la ruta.
+            </h3>
+            <p className="max-w-xl text-lg leading-[1.8] text-buey-white/70 font-light">
+              Creemos en el trabajo silencioso que produce resultados exponenciales. Aseguramos la constancia en cada etapa del proyecto; aportamos la creatividad y la técnica para alcanzar las cumbres más elevadas.
+            </p>
+            <p className="text-lg italic tracking-wide text-buey-white/90">
+              Tu meta es nuestra dirección; el camino lo recorremos juntos.
             </p>
           </motion.div>
         </div>
