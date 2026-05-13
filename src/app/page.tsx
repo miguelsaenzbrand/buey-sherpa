@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState, useTransition } from "react";
+import Link from "next/link";
 import { sendEmail } from "./actions";
 
 export default function Home() {
@@ -9,10 +10,10 @@ export default function Home() {
   const [isPending, startTransition] = useTransition();
 
   const cumbres = [
-    { id: "01", title: "MARKETING", desc: "ESTRATEGIA INTEGRAL" },
-    { id: "02", title: "PRODUCCIÓN AUDIOVISUAL", desc: "NARRATIVA VISUAL" },
-    { id: "03", title: "DESARROLLO WEB", desc: "ARQUITECTURA DIGITAL" },
-    { id: "04", title: "MARKETING DIGITAL TÉCNICO", desc: "SEO / SEM" },
+    { id: "01", title: "MARKETING", desc: "ESTRATEGIA INTEGRAL", href: "/marketing" },
+    { id: "02", title: "PRODUCCIÓN AUDIOVISUAL", desc: "NARRATIVA VISUAL", href: "/produccion-audiovisual" },
+    { id: "03", title: "DESARROLLO WEB", desc: "ARQUITECTURA DIGITAL", href: "/desarrollo-web" },
+    { id: "04", title: "MARKETING DIGITAL TÉCNICO", desc: "SEO / SEM", href: "/marketing-tecnico" },
   ];
 
   async function handleSubmit(formData: FormData) {
@@ -106,13 +107,13 @@ export default function Home() {
           
           <div className="space-y-8">
             {cumbres.map((item) => (
-              <div key={item.id} className="group cursor-crosshair border-b border-white/5 pb-8 last:border-0">
+              <Link key={item.id} href={item.href} className="block group cursor-crosshair border-b border-white/5 pb-8 last:border-0">
                 <p className="font-mono text-sm md:text-base tracking-wider flex flex-col md:flex-row md:items-center gap-2 md:gap-4 transition-all group-hover:translate-x-2">
                   <span className="text-buey-orange font-bold">{item.id}. {item.title}</span>
                   <span className="opacity-30 hidden md:block">//</span>
                   <span className="opacity-60 uppercase">{item.desc}</span>
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </motion.div>
