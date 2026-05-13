@@ -15,7 +15,7 @@ export async function sendEmail(formData: FormData) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: 'Buey Sherpa <onboarding@resend.dev>', // Initial testing domain
+      from: 'Buey Sherpa <contacto@bueysherpa.com>', // Ahora usando tu dominio verificado
       to: ['hola@bueysherpa.com'],
       subject: `Nueva expedición: ${name}`,
       replyTo: email,
