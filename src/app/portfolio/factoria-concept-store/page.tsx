@@ -57,7 +57,7 @@ export default function FactoriaCaseStudy() {
         <div className="space-y-8">
           <h3 className="text-xs tracking-[0.5em] uppercase opacity-40 font-mono">La Solución</h3>
           <p className="text-lg md:text-xl font-light leading-relaxed text-buey-white/70">
-            Nos encargamos de la producción de la barra de coctelería, diseñando una propuesta de tragos que acompañara el estilo sofisticado de la tienda. Simultáneamente, realizamos el rodaje y edición de un video del evento, enfocándonos en los detalles de diseño, la atmósfera de la apertura y la interacción de la comunidad con este nuevo hito comercial en la ciudad.
+            A través de una estrategia de <strong>Marketing de Altura</strong>, nos encargamos de la producción integral del evento. Como referentes de <strong>marketing en Patagonia</strong>, fusionamos coctelería de autor y narrativa audiovisual para capturar la apertura del concept store más disruptivo de la región.
           </p>
         </div>
       </section>

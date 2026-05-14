@@ -57,7 +57,7 @@ export default function CarpinteriaCaseStudy() {
         <div className="space-y-8">
           <h3 className="text-xs tracking-[0.5em] uppercase opacity-40 font-mono">La Solución</h3>
           <p className="text-lg md:text-xl font-light leading-relaxed text-buey-white/70">
-            Propusimos una narrativa basada en el Storytelling puro. A través de un film que documenta el proceso artesanal, el sonido de las herramientas y el entorno patagónico, logramos conectar emocionalmente con una audiencia que valora la autenticidad y el tiempo dedicado a la excelencia.
+            Bajo nuestra visión de <strong>Marketing de Altura</strong>, propusimos una narrativa basada en el Storytelling puro. A través de un film que documenta el proceso artesanal y el entorno patagónico, logramos posicionar a esta <strong>agencia de marketing en Patagonia</strong> como un aliado estratégico para marcas de autor.
           </p>
         </div>
       </section>

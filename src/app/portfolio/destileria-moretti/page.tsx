@@ -57,7 +57,7 @@ export default function MorettiCaseStudy() {
         <div className="space-y-8">
           <h3 className="text-xs tracking-[0.5em] uppercase opacity-40 font-mono">La Solución</h3>
           <p className="text-lg md:text-xl font-light leading-relaxed text-buey-white/70">
-            Diseñamos y ejecutamos una producción integral en Bariloche. Elegimos Lua Bar por su estética y ubicación estratégica, convocamos a la prensa especializada y gestionamos una campaña de invitaciones exclusivas. La noche fue ambientada por sets de DJ locales, convirtiendo el lanzamiento en el evento social de la temporada.
+            Aplicando nuestra metodología de <strong>Marketing de Altura</strong>, diseñamos una producción integral en Bariloche. Como <strong>agencia de marketing en Patagonia</strong>, elegimos Lua Bar para crear una experiencia de marca disruptiva que garantizara visibilidad y relevancia en el mercado local.
           </p>
         </div>
       </section>
