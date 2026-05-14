@@ -15,7 +15,7 @@ export default function PropuestasLayout({
 
   // En una app real, esto vendría de una variable de entorno
   // o se validaría en el servidor. Para este MVP usamos una simple.
-  const MASTER_PASSWORD = "buey-ascenso";
+  const MASTER_PASSWORD = "cerro-nahuel-pan";
 
   useEffect(() => {
     const auth = localStorage.getItem("buey_auth");

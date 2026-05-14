@@ -237,7 +237,24 @@ export default function Home() {
             >
               CDS Patagonia
             </Link>
-            {/* Otros clientes pueden ir aquí */}
+            <Link 
+              href="#"
+              className="text-2xl md:text-3xl font-serif italic font-light hover:text-buey-orange transition-colors duration-300"
+            >
+              Dublin Dogos RFC
+            </Link>
+            <Link 
+              href="#"
+              className="text-2xl md:text-3xl font-serif italic font-light hover:text-buey-orange transition-colors duration-300"
+            >
+              Revista Zorro
+            </Link>
+            <Link 
+              href="#"
+              className="text-2xl md:text-3xl font-serif italic font-light hover:text-buey-orange transition-colors duration-300"
+            >
+              Mercado Austral
+            </Link>
           </div>
         </div>
       </section>
