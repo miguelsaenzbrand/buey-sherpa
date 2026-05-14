@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, ArrowDown, CheckCircle2, AlertCircle, TrendingUp, Laptop } from "lucide-react";
 
 export default function CDSPropuesta() {
@@ -132,9 +133,13 @@ export default function CDSPropuesta() {
           </motion.div>
           <motion.div {...fadeIn} transition={{ delay: 0.3 }} className="flex items-center">
             <div className="aspect-[4/5] bg-white/5 w-full border border-white/5 relative group overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center p-12 text-center opacity-30 group-hover:opacity-100 transition-opacity">
-                <span className="text-[10px] tracking-[0.5em] uppercase font-bold">Visual Strategy Placeholder</span>
-              </div>
+              <Image 
+                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2070"
+                alt="Estrategia de Altura"
+                fill
+                className="object-cover opacity-40 grayscale group-hover:grayscale-0 transition-all duration-1000"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-buey-dark via-transparent to-transparent" />
             </div>
           </motion.div>
         </div>
@@ -150,10 +155,13 @@ export default function CDSPropuesta() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <motion.div {...fadeIn} className="space-y-8 group">
-              <div className="aspect-[16/10] bg-white/5 border border-white/5 relative overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-1000">
-                <div className="absolute inset-0 flex items-center justify-center opacity-20">
-                  <span className="text-[10px] tracking-[0.5em] uppercase font-bold">Pharos Visual</span>
-                </div>
+              <div className="aspect-[16/10] bg-white/5 border border-white/5 relative overflow-hidden">
+                <Image 
+                  src="/pharos-01.jpeg"
+                  alt="Pharos - Vivir en el viñedo"
+                  fill
+                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
+                />
               </div>
               <div className="space-y-4">
                 <h3 className="text-3xl font-black uppercase tracking-tighter">PHAROS</h3>
@@ -163,10 +171,13 @@ export default function CDSPropuesta() {
             </motion.div>
 
             <motion.div {...fadeIn} transition={{ delay: 0.2 }} className="space-y-8 group">
-              <div className="aspect-[16/10] bg-white/5 border border-white/5 relative overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-1000">
-                <div className="absolute inset-0 flex items-center justify-center opacity-20">
-                  <span className="text-[10px] tracking-[0.5em] uppercase font-bold">Pueblo Carao Visual</span>
-                </div>
+              <div className="aspect-[16/10] bg-white/5 border border-white/5 relative overflow-hidden">
+                <Image 
+                  src="/pueblo-carao.jpg"
+                  alt="Pueblo Carao - Refugio en la inmensidad"
+                  fill
+                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
+                />
               </div>
               <div className="space-y-4">
                 <h3 className="text-3xl font-black uppercase tracking-tighter">PUEBLO CARAO</h3>
