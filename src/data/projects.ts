@@ -27,4 +27,13 @@ export const projects: Project[] = [
     href: "/portfolio/destileria-moretti",
     thumbnail: "/moretti-thumb.png",
   },
+  {
+    id: "factoria-concept-store",
+    title: "Inauguración Factoría",
+    client: "Factoría: Concept Store",
+    description: "Producción de barra de coctelería y cobertura audiovisual para evento de apertura.",
+    tags: ["estrategia", "video"],
+    href: "/portfolio/factoria-concept-store",
+    thumbnail: "/factoria-thumb.png",
+  },
 ];
