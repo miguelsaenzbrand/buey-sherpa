@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { projects } from "../../data/projects";
 
@@ -51,6 +52,14 @@ export default function SEOPage() {
               {filteredProjects.map((project) => (
                 <Link key={project.id} href={project.href} className="group space-y-6">
                   <div className="aspect-video bg-white/5 border border-white/5 overflow-hidden relative">
+                    {project.thumbnail && (
+                      <Image 
+                        src={project.thumbnail} 
+                        alt={project.title}
+                        fill
+                        className="object-cover opacity-50 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                      />
+                    )}
                     <div className="absolute inset-0 bg-buey-orange/0 group-hover:bg-buey-orange/5 transition-colors duration-500" />
                   </div>
                   <div className="space-y-2">
