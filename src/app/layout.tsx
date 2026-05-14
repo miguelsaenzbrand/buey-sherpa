@@ -14,9 +14,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BUEY SHERPA | Potencia Dirigida",
-  description: "Estudio de estrategia integral, producción audiovisual, desarrollo web y marketing técnico.",
-  keywords: ["Marketing", "SEO", "Desarrollo Web", "Audiovisual", "Patagonia", "Estrategia"],
+  title: "BUEY SHERPA | Marketing de Altura",
+  description: "Estudio de estrategia integral, producción audiovisual, desarrollo web y marketing técnico. Fuerza para el ascenso, sabiduría para la ruta.",
+  keywords: ["Marketing de altura", "SEO", "Desarrollo Web", "Audiovisual", "Patagonia", "Estrategia Digital"],
+  openGraph: {
+    title: "BUEY SHERPA | Marketing de Altura",
+    description: "Fuerza para el ascenso, sabiduría para la ruta. Estrategia integral y producción de contenido desde la Patagonia.",
+    url: "https://bueysherpa.com",
+    siteName: "BUEY SHERPA",
+    locale: "es_AR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BUEY SHERPA | Marketing de Altura",
+    description: "Fuerza para el ascenso, sabiduría para la ruta. Estrategia integral y producción de contenido.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 export default function RootLayout({

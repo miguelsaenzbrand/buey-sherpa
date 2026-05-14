@@ -87,7 +87,7 @@ export default function Home() {
           className="text-center"
         >
           <p className="text-xl md:text-2xl font-light tracking-[0.4em] text-buey-orange uppercase leading-relaxed">
-            POTENCIA DIRIGIDA.<br />
+            MARKETING DE ALTURA.<br />
             VISIÓN INTEGRAL.<br />
             HACIA LA CIMA.
           </p>
