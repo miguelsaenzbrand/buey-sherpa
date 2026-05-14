@@ -25,6 +25,6 @@ export const projects: Project[] = [
     description: "Producción integral de evento de lanzamiento y posicionamiento de marca en la Patagonia.",
     tags: ["estrategia"],
     href: "/portfolio/destileria-moretti",
-    thumbnail: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=2070", // Placeholder for Gin/Event
+    thumbnail: "/moretti-thumb.png",
   },
 ];
