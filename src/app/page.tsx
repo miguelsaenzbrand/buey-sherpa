@@ -244,7 +244,8 @@ export default function Home() {
               Dublin Dogos RFC
             </Link>
             <Link 
-              href="#"
+              href="https://revistazorro.com"
+              target="_blank"
               className="text-2xl md:text-3xl font-serif italic font-light hover:text-buey-orange transition-colors duration-300"
             >
               Revista Zorro
