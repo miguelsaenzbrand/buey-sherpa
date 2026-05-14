@@ -219,6 +219,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CLIENTES Section */}
+      <section className="w-full border-t border-buey-white/10 py-24 px-10 bg-buey-dark">
+        <div className="max-w-7xl mx-auto space-y-12">
+          <motion.h2 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            className="text-xs tracking-[0.5em] uppercase opacity-50 font-mono"
+          >
+            Clientes
+          </motion.h2>
+          
+          <div className="flex flex-wrap gap-x-12 gap-y-6">
+            <Link 
+              href="/propuestas/cds-patagonia"
+              className="text-2xl md:text-3xl font-serif italic font-light hover:text-buey-orange transition-colors duration-300"
+            >
+              CDS Patagonia
+            </Link>
+            {/* Otros clientes pueden ir aquí */}
+          </div>
+        </div>
+      </section>
+
       {/* Footer Minimalista */}
       <footer className="w-full p-12 mt-auto flex justify-center">
         <div className="font-mono text-[10px] tracking-[0.3em] opacity-20 uppercase">
