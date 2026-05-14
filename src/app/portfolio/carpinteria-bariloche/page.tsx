@@ -5,8 +5,24 @@ import Link from "next/link";
 import { ArrowLeft, Play } from "lucide-react";
 
 export default function CarpinteriaCaseStudy() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Cáceres & Addams: Oficio y Materia",
+    "description": "Storytelling para una carpintería de autor en San Carlos de Bariloche. Un recorrido por el proceso artesanal y la filosofía del trabajo con madera.",
+    "thumbnailUrl": [
+      "https://bueysherpa.com/carpinteria-thumb.png"
+    ],
+    "uploadDate": "2022-05-26",
+    "embedUrl": "https://player.vimeo.com/video/714287408"
+  };
+
   return (
     <main className="min-h-screen bg-buey-dark text-buey-white selection:bg-buey-orange selection:text-buey-dark font-sans">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       
       {/* Header / Navigation */}
       <nav className="p-8 md:p-12">

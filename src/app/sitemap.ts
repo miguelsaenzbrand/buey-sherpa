@@ -3,36 +3,39 @@ import { MetadataRoute } from 'next';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://bueysherpa.com';
 
-  return [
+  const services = [
+    '/marketing',
+    '/produccion-audiovisual',
+    '/desarrollo-web',
+    '/marketing-tecnico',
+  ];
+
+  const portfolio = [
+    '/portfolio/carpinteria-bariloche',
+    '/portfolio/destileria-moretti',
+    '/portfolio/factoria-concept-store',
+  ];
+
+  const routes = [
     {
       url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 1,
     },
-    {
-      url: `${baseUrl}/marketing`,
+    ...services.map((route) => ({
+      url: `${baseUrl}${route}`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/produccion-audiovisual`,
+    })),
+    ...portfolio.map((route) => ({
+      url: `${baseUrl}${route}`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/desarrollo-web`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/marketing-tecnico`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
   ];
+
+  return routes;
 }

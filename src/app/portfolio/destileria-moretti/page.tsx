@@ -5,8 +5,24 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 export default function MorettiCaseStudy() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Destilería Moretti: Gin & Tonic en la Cumbre",
+    "description": "Lanzamiento y posicionamiento de Gintonic en lata para Destilería Moretti en Bariloche.",
+    "thumbnailUrl": [
+      "https://bueysherpa.com/moretti-thumb.png"
+    ],
+    "uploadDate": "2022-05-27",
+    "embedUrl": "https://player.vimeo.com/video/714600218"
+  };
+
   return (
     <main className="min-h-screen bg-buey-dark text-buey-white selection:bg-buey-orange selection:text-buey-dark font-sans">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       
       {/* Header / Navigation */}
       <nav className="p-8 md:p-12">

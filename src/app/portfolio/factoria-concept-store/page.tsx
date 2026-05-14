@@ -5,8 +5,24 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 export default function FactoriaCaseStudy() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Inauguración Factoría: Concept Store",
+    "description": "Producción integral y cobertura audiovisual para la apertura del concept store en Bariloche.",
+    "thumbnailUrl": [
+      "https://bueysherpa.com/factoria-thumb.png"
+    ],
+    "uploadDate": "2022-05-27",
+    "embedUrl": "https://player.vimeo.com/video/714596446"
+  };
+
   return (
     <main className="min-h-screen bg-buey-dark text-buey-white selection:bg-buey-orange selection:text-buey-dark font-sans">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       
       {/* Header / Navigation */}
       <nav className="p-8 md:p-12">
