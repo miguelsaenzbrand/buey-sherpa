@@ -28,14 +28,14 @@ export default function CDSPropuesta() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="mb-12"
+          className="mb-8"
         >
           <Image 
-            src="/cds-logo.jpg"
+            src="/cds-logo.png"
             alt="CDS Patagonia Logo"
-            width={120}
-            height={120}
-            className="rounded-full grayscale brightness-125 contrast-75 mix-blend-screen opacity-80"
+            width={220}
+            height={220}
+            className="grayscale brightness-150 contrast-100 opacity-90 object-contain"
           />
         </motion.div>
 
