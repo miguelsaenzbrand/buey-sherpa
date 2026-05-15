@@ -96,9 +96,12 @@ export default function CDSPropuesta() {
       {/* 3. AUDITORÍA */}
       <section className="min-h-screen px-8 md:px-24 py-32 border-y border-white/5">
         <div className="max-w-5xl mx-auto space-y-24">
-          <motion.div {...fadeIn} className="text-center">
+          <motion.div {...fadeIn} className="text-center space-y-8">
             <h2 className="text-4xl md:text-7xl font-serif italic font-light tracking-tighter">Diagnóstico de Superficie</h2>
-            <p className="mt-6 text-sm md:text-lg opacity-40 uppercase tracking-[0.4em]">Auditando cdspatagonia.com</p>
+            <p className="max-w-2xl mx-auto text-lg md:text-xl font-light leading-relaxed text-buey-white/70">
+              Respondiendo al objetivo de trabajar en el marketing de <strong>CDS Patagonia</strong>, posicionando a la empresa sobre la competencia y poniendo el foco en la venta de los activos disponibles, en especial <strong>Pueblo Carao</strong> y <strong>Pharos</strong>, auditamos las diferentes páginas y trazamos una ruta.
+            </p>
+            <p className="text-sm md:text-lg opacity-40 uppercase tracking-[0.4em]">Auditando cdspatagonia.com</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
