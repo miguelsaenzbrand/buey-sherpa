@@ -99,7 +99,7 @@ export default function CDSPropuesta() {
           <motion.div {...fadeIn} className="text-center space-y-8">
             <h2 className="text-4xl md:text-7xl font-serif italic font-light tracking-tighter">Diagnóstico de Superficie</h2>
             <p className="max-w-2xl mx-auto text-lg md:text-xl font-light leading-relaxed text-buey-white/70">
-              Respondiendo al objetivo de trabajar en el marketing de <strong>CDS Patagonia</strong>, posicionando a la empresa sobre la competencia y poniendo el foco en la venta de los activos disponibles, en especial <strong>Pueblo Carao</strong> y <strong>Pharos</strong>, auditamos las diferentes páginas y trazamos una ruta.
+              Auditamos el territorio digital de <strong>CDS Patagonia</strong> bajo un objetivo doble: consolidar el liderazgo del desarrollador frente a la competencia y maximizar la fuerza de venta de sus activos estratégicos. Con la mirada puesta en la exclusividad de <strong>Pueblo Carao</strong> y <strong>Pharos</strong>, trazamos esta hoja de ruta técnica.
             </p>
             <p className="text-sm md:text-lg opacity-40 uppercase tracking-[0.4em]">Auditando cdspatagonia.com</p>
           </motion.div>
