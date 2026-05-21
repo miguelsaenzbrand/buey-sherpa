@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Marketing Estratégico & Estrategia Integral | BUEY SHERPA",
-  description: "No creemos en tácticas aisladas, sino en ecosistemas de marca sólidos. El marketing en BUEY SHERPA es la brújula que guía cada acción hacia un objetivo de negocio real.",
+  description: "Agencia de marketing integral en la Patagonia. Impulsamos tu marca con diseño web, SEO, SEM y producción audiovisual de alto impacto. ¡Hablemos hoy!",
   keywords: ["Marketing", "marketing argentina", "marketing patagonia", "estrategia de marketing", "estrategia de marketing patagonia"],
 };
 

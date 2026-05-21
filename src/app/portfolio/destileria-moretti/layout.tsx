@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Destilería Moretti: Gin & Tonic en la Cumbre | BUEY SHERPA",
-  description: "Lanzamiento y posicionamiento de Gintonic en lata para Destilería Moretti. Producción integral de evento de lanzamiento y posicionamiento de marca en la Patagonia.",
+  description: "Case study con Destilería Moretti. Explorá nuestro portfolio de Buey Sherpa.",
   keywords: ["marketing case study", "video", "eventos", "bariloche", "gintonic", "gin & tonic", "moretti", "destileria moretti", "buenos aires gin", "dj", "marketing"],
 };
 

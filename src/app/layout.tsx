@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "BUEY SHERPA | Marketing de Altura en Patagonia",
-  description: "Agencia de marketing en Patagonia especializada en estrategia integral, producción audiovisual y desarrollo web. Fuerza para el ascenso, sabiduría para la ruta.",
+  description: "Agencia de marketing en Patagonia especializada en estrategia integral, producción audiovisual y desarrollo web y posicionaiento.Comencemos el ascenso.",
   metadataBase: new URL('https://bueysherpa.com'),
   keywords: ["Marketing de altura", "Agencia de marketing Patagonia", "Marketing Patagonia", "SEO", "Desarrollo Web", "Audiovisual", "Estrategia Digital"],
   openGraph: {
