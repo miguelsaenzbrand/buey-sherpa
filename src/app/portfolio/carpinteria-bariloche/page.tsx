@@ -13,7 +13,7 @@ export default function CarpinteriaCaseStudy() {
     "thumbnailUrl": [
       "https://bueysherpa.com/carpinteria-thumb.png"
     ],
-    "uploadDate": "2022-05-26",
+    "uploadDate": "2022-05-26T12:00:00-03:00",
     "embedUrl": "https://player.vimeo.com/video/714287408"
   };
 

@@ -13,7 +13,7 @@ export default function FactoriaCaseStudy() {
     "thumbnailUrl": [
       "https://bueysherpa.com/factoria-thumb.png"
     ],
-    "uploadDate": "2022-05-27",
+    "uploadDate": "2022-05-27T12:00:00-03:00",
     "embedUrl": "https://player.vimeo.com/video/714596446"
   };
 
