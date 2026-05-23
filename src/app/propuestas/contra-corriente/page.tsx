@@ -71,31 +71,70 @@ export default function ContraCorrientePropuesta() {
         <div className="max-w-5xl mx-auto space-y-24">
           <motion.div {...fadeIn} className="text-center space-y-8">
             <h2 className="text-4xl md:text-7xl font-serif italic font-light tracking-tighter">Diagnóstico de Superficie</h2>
-            <p className="max-w-2xl mx-auto text-lg md:text-xl font-light leading-relaxed text-buey-white/70">
-              Auditamos el ecosistema digital de la bodega para identificar por qué un producto de calidad de exportación no se refleja en su volumen de transacciones web. Diseñamos este mapa técnico para corregir las fricciones y posicionar a la bodega en los motores de búsqueda.
-            </p>
+            <div className="max-w-3xl mx-auto text-lg md:text-xl font-light leading-relaxed text-buey-white/70 space-y-6 text-left md:text-center">
+              <span className="text-xs tracking-[0.5em] text-buey-orange font-bold uppercase block text-center mb-4">Anexo: Diagnóstico y Oportunidades en tu Sitio Web</span>
+              <p>
+                Realizamos una auditoría técnica profunda sobre la web actual de <strong>Contra Corriente</strong> para entender qué está frenando el crecimiento de las ventas online. Detectamos que, si bien la marca tiene un gran potencial, la estructura actual de la página confunde a Google y puede frustrar a los usuarios.
+              </p>
+              <p className="text-sm opacity-60 text-center">
+                A continuación, resumimos los 3 problemas principales que resolveremos durante el primer mes de trabajo:
+              </p>
+            </div>
             <p className="text-sm md:text-lg opacity-40 uppercase tracking-[0.4em]">Auditando contracorrientebodega.com</p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { title: "Silencio de Marca (SEO)", desc: "Falta de optimización para palabras clave de alta intención como 'Vinos de Trevelin' o 'Pinot Noir Patagonia'." },
-              { title: "Sinergia Inactiva", desc: "El tráfico internacional premium que llega a Patagonia River Guides no es redirigido de manera eficiente a la e-commerce de la bodega." },
-              { title: "Experiencia de Compra", desc: "Fricciones en el checkout y falta de un flujo inmersivo que transmita el valor real de una botella premium." },
-              { title: "Local SEO Invisible", desc: "Baja optimización en Google Maps para turistas que recorren la Ruta 40 y buscan bodegas en Trevelin/Esquel." }
+              { 
+                num: "01",
+                title: "\"Invisible\" ante Google", 
+                subtitle: "Falta de títulos y descripciones comerciales",
+                desc: "La gran mayoría de las páginas y botellas de la tienda online no tienen configuradas sus etiquetas de presentación (títulos y meta-descripciones), o están duplicadas. Ante los ojos de Google, es como si varios vinos distintos tuvieran la misma etiqueta física.",
+                impact: "Google no entiende cuál es el vino correcto para mostrar cuando alguien busca, por ejemplo, \"comprar Pinot Noir de la Patagonia\". Al no tener descripciones atractivas, perdemos la oportunidad de convencer al usuario de hacer clic."
+              },
+              { 
+                num: "02",
+                title: "Pérdida de carritos por lentitud", 
+                subtitle: "Imágenes pesadas y sin optimizar",
+                desc: "Casi la mitad de las imágenes de los productos y del viñedo están subidas \"en crudo\", con un peso excesivo para la web y sin tamaños declarados en el código.",
+                impact: "La web se vuelve lenta, especialmente en celulares. Cuando un cliente potencial entra a mirar las botellas, las imágenes tardan en cargar o hacen \"saltos\" en la pantalla. En el e-commerce, cada segundo de demora es un cliente que puede abandonar el carrito de compras."
+              },
+              { 
+                num: "03",
+                title: "Contenido pobre para buscadores", 
+                subtitle: "Fichas técnicas vacías",
+                desc: "Muchas de las páginas de productos tienen menos de 200 palabras de texto. Son fichas técnicas muy vacías.",
+                impact: "Google premia a las páginas que informan bien al usuario. Al no contar la historia del terroir de Trevelin, las notas de cata o sugerencias de maridaje, el buscador considera que la página tiene poco valor y la posiciona por debajo de la competencia."
+              }
             ].map((item, i) => (
               <motion.div 
                 key={i} 
                 {...fadeIn} 
                 transition={{ delay: i * 0.1 }}
-                className="bg-white/5 p-10 border border-white/5 space-y-4 hover:border-buey-orange/30 transition-colors"
+                className="bg-white/5 p-8 border border-white/5 flex flex-col justify-between hover:border-buey-orange/30 transition-all duration-300"
               >
-                <AlertCircle className="text-buey-orange opacity-50" size={20} />
-                <h4 className="text-xl font-bold uppercase tracking-tighter">{item.title}</h4>
-                <p className="text-sm leading-relaxed opacity-60 font-light">{item.desc}</p>
+                <div className="space-y-6">
+                  <span className="font-mono text-xs text-buey-orange font-bold block">{item.num} // {item.subtitle}</span>
+                  <h4 className="text-xl font-black uppercase tracking-tight leading-tight">{item.title}</h4>
+                  <p className="text-sm leading-relaxed opacity-60 font-light">{item.desc}</p>
+                </div>
+                <div className="mt-8 pt-6 border-t border-white/5 space-y-2">
+                  <span className="text-[10px] tracking-wider uppercase text-buey-orange font-bold block">El Impacto</span>
+                  <p className="text-xs leading-relaxed opacity-50 font-light italic">{item.impact}</p>
+                </div>
               </motion.div>
             ))}
           </div>
+
+          <motion.div 
+            {...fadeIn} 
+            className="p-8 md:p-12 border border-buey-orange/30 bg-buey-orange/5 max-w-4xl mx-auto space-y-4"
+          >
+            <span className="text-[10px] tracking-[0.4em] uppercase text-buey-orange font-bold block">Conclusión para la Estrategia</span>
+            <p className="text-sm md:text-base leading-relaxed opacity-80 font-light">
+              Resolver estos tres puntos es nuestro paso inicial. Una vez \"saneada\" la web, el sitio no solo cargará más rápido y retendrá más compradores, sino que estará técnicamente listo para recibir toda la autoridad digital que le traspasaremos desde <strong>Patagonia River Guides</strong> y escalar posiciones en Google de forma sólida.
+            </p>
+          </motion.div>
         </div>
       </section>
 
