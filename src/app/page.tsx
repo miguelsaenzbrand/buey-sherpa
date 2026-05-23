@@ -238,6 +238,12 @@ export default function Home() {
               CDS Patagonia
             </Link>
             <Link 
+              href="/propuestas/contra-corriente"
+              className="text-2xl md:text-3xl font-serif italic font-light hover:text-buey-orange transition-colors duration-300"
+            >
+              Contra Corriente
+            </Link>
+            <Link 
               href="#"
               className="text-2xl md:text-3xl font-serif italic font-light hover:text-buey-orange transition-colors duration-300"
             >

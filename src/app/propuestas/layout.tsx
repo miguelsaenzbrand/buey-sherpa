@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Lock } from "lucide-react";
 
@@ -12,23 +13,34 @@ export default function PropuestasLayout({
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
+  
+  const pathname = usePathname();
 
-  // En una app real, esto vendría de una variable de entorno
-  // o se validaría en el servidor. Para este MVP usamos una simple.
-  const MASTER_PASSWORD = "cerro-nahuel-pan";
+  // Helper to determine the password & storage key depending on the current proposal
+  const getPasswordAndKeyForPath = (path: string) => {
+    const isContraCorriente = path.includes("contra-corriente");
+    return {
+      password: isContraCorriente ? "cerro-situacion" : "cerro-nahuel-pan",
+      storageKey: isContraCorriente ? "buey_auth_contra_corriente" : "buey_auth_cds_patagonia"
+    };
+  };
+
+  const { password: MASTER_PASSWORD, storageKey: STORAGE_KEY } = getPasswordAndKeyForPath(pathname || "");
 
   useEffect(() => {
-    const auth = localStorage.getItem("buey_auth");
+    const auth = localStorage.getItem(STORAGE_KEY);
     if (auth === "true") {
       setIsAuthenticated(true);
+    } else {
+      setIsAuthenticated(false);
     }
-  }, []);
+  }, [STORAGE_KEY]);
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     if (password === MASTER_PASSWORD) {
       setIsAuthenticated(true);
-      localStorage.setItem("buey_auth", "true");
+      localStorage.setItem(STORAGE_KEY, "true");
       setError(false);
     } else {
       setError(true);
@@ -82,6 +94,7 @@ export default function PropuestasLayout({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
+          className="w-full"
         >
           {children}
         </motion.div>
