@@ -235,7 +235,11 @@ export default function ContraCorrientePropuesta() {
             <div className="divide-y divide-white/5 text-sm">
               {[
                 {
-                  title: "Estrategia, SEO Técnico e Integración PRG",
+                  title: (
+                    <>
+                      Estrategia, SEO Técnico <br /> e Integración PRG
+                    </>
+                  ),
                   detail: "Auditoría mensual, optimización on-page, keyword research de productos, SEO Local y estrategia de traspaso de autoridad desde Patagonia River Guides. (A cargo de Especialista SEO Senior)",
                   price: "$216.000"
                 },
@@ -251,7 +255,7 @@ export default function ContraCorrientePropuesta() {
                 }
               ].map((row, i) => (
                 <div key={i} className="grid grid-cols-1 md:grid-cols-3 p-6 gap-4 md:gap-0 items-center">
-                  <div className="font-bold uppercase tracking-tight">{row.title}</div>
+                  <div className="font-bold uppercase tracking-tight md:pr-4">{row.title}</div>
                   <div className="font-light opacity-60 text-xs md:text-sm leading-relaxed md:pr-8">{row.detail}</div>
                   <div className="font-mono text-buey-orange font-bold text-lg md:text-right">{row.price}</div>
                 </div>
