@@ -175,9 +175,9 @@ export default function ContraCorrientePropuesta() {
         </div>
       </section>
 
-      {/* 5. PROPUESTA OPERATIVA */}
-      <section className="min-h-screen px-8 md:px-24 py-32 border-t border-white/5">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-24 items-center">
+      {/* 5. PROPUESTA OPERATIVA Y ABONO */}
+      <section className="min-h-screen px-8 md:px-24 py-32 border-t border-white/5 space-y-32">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-24 items-start">
           <motion.div {...fadeIn} className="md:w-1/2 space-y-12">
             <h2 className="text-5xl md:text-7xl font-black uppercase leading-none tracking-tighter">
               ACCIONES <br />
@@ -197,14 +197,97 @@ export default function ContraCorrientePropuesta() {
               ))}
             </ul>
           </motion.div>
+          
           <motion.div {...fadeIn} className="md:w-1/2 bg-white/[0.02] p-12 border border-white/10 space-y-8">
-            <h3 className="text-2xl font-serif italic font-light">Compromiso BUEY SHERPA</h3>
-            <p className="text-base leading-relaxed font-light opacity-60">
-              Aportamos la potencia técnica y la visión de territorio necesarias para llevar los vinos de Trevelin al mercado global. Trazamos la ruta del posicionamiento orgánico.
-            </p>
+            <span className="text-[10px] tracking-[0.4em] uppercase text-buey-orange font-bold block">Propuesta de Servicio</span>
+            <h3 className="text-3xl font-black uppercase tracking-tight leading-none">SEO & CONTENIDOS</h3>
+            <div className="space-y-4 text-sm opacity-75 font-light leading-relaxed">
+              <p><strong>Preparado por:</strong> Agencia Buey Sherpa (bueysherpa.com)</p>
+              <p><strong>Para:</strong> Bodega Contra Corriente (contracorrientebodega.com)</p>
+              <p><strong>Objetivo Principal:</strong> Incrementar el tráfico orgánico cualificado para impulsar la venta directa de botellas de vino en canales digitales y potenciar las visitas a la bodega.</p>
+            </div>
+            
             <div className="pt-6 border-t border-white/10 flex justify-between items-center">
-              <span className="text-[10px] tracking-[0.4em] uppercase opacity-40">Propuesta de Servicio</span>
+              <span className="text-[10px] tracking-[0.4em] uppercase opacity-40">Documentación Técnica</span>
               <span className="text-xs font-bold text-buey-orange tracking-widest">ED. 01 / CC</span>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* DETALLE DEL ABONO Y PRESUPUESTO */}
+        <div className="max-w-5xl mx-auto space-y-20">
+          <motion.div {...fadeIn} className="space-y-6 text-center md:text-left">
+            <span className="text-xs tracking-[0.5em] text-buey-orange font-bold uppercase block">Inversión y Compromiso</span>
+            <h3 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">Desglose del Abono</h3>
+            <p className="max-w-2xl text-base font-light opacity-60 leading-relaxed">
+              Detallamos cómo se compone la inversión mensual basándonos en las horas de especialización y las tareas de integración de marcas de nuestro equipo.
+            </p>
+          </motion.div>
+
+          {/* Tabla de Tarifas */}
+          <motion.div {...fadeIn} className="border border-white/10 bg-white/[0.01] overflow-hidden rounded-sm">
+            <div className="grid grid-cols-1 md:grid-cols-3 border-b border-white/10 p-6 text-xs uppercase tracking-[0.2em] font-mono opacity-50 bg-white/[0.02] hidden md:grid">
+              <div>Componente del Servicio</div>
+              <div>Detalle del Trabajo</div>
+              <div className="text-right">Costo Mensual (ARS)</div>
+            </div>
+
+            <div className="divide-y divide-white/5 text-sm">
+              {[
+                {
+                  title: "Estrategia, SEO Técnico e Integración PRG",
+                  detail: "Auditoría mensual, optimización on-page, keyword research de productos, SEO Local y estrategia de traspaso de autoridad desde Patagonia River Guides. (A cargo de Especialista SEO Senior)",
+                  price: "$216.000"
+                },
+                {
+                  title: "Generación de Contenido",
+                  detail: "Planificación, investigación de temas de nicho vitivinícola/experiencias y redacción de 2 artículos extensos optimizados. (A cargo de Redactor SEO + Editor)",
+                  price: "$132.000"
+                },
+                {
+                  title: "Análisis y Reportes",
+                  detail: "Monitoreo de conversiones (ventas), tráfico cruzado entre plataformas y entrega de informe mensual de rendimiento. (A cargo de Account Manager)",
+                  price: "$72.000"
+                }
+              ].map((row, i) => (
+                <div key={i} className="grid grid-cols-1 md:grid-cols-3 p-6 gap-4 md:gap-0 items-center">
+                  <div className="font-bold uppercase tracking-tight">{row.title}</div>
+                  <div className="font-light opacity-60 text-xs md:text-sm leading-relaxed md:pr-8">{row.detail}</div>
+                  <div className="font-mono text-buey-orange font-bold text-lg md:text-right">{row.price}</div>
+                </div>
+              ))}
+            </div>
+
+            {/* Total */}
+            <div className="grid grid-cols-1 md:grid-cols-3 p-8 border-t border-white/10 bg-buey-orange/5 items-center gap-4 md:gap-0">
+              <div className="text-lg font-black uppercase tracking-tight">Valor Total del Abono</div>
+              <div className="text-xs font-light opacity-75">Estrategia, Posicionamiento y Contenido</div>
+              <div className="text-2xl font-mono font-black text-buey-orange md:text-right">
+                $420.000 <span className="text-xs font-light block md:inline md:ml-1 text-white/50">/ mes</span>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div {...fadeIn} className="text-xs font-mono opacity-40 text-center md:text-right">
+            Nota sobre la divisa: Los valores están expresados en pesos argentinos. Este abono mensual equivale aproximadamente a USD 300 / mes.
+          </motion.div>
+
+          {/* Términos y Condiciones */}
+          <motion.div {...fadeIn} className="p-8 border border-white/5 bg-white/[0.02] rounded-sm space-y-6">
+            <h4 className="text-lg font-bold uppercase tracking-tight">Términos y Condiciones</h4>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-xs leading-relaxed opacity-60 font-light">
+              <div className="space-y-2">
+                <span className="font-bold text-buey-orange uppercase block">Duración Sugerida</span>
+                <p>El SEO es una estrategia de mediano/largo plazo. Se sugiere un compromiso inicial de 6 meses para consolidar el traspaso de autoridad y ver el impacto real en las ventas estables.</p>
+              </div>
+              <div className="space-y-2">
+                <span className="font-bold text-buey-orange uppercase block">Forma de Pago</span>
+                <p>Transferencia bancaria del 1 al 5 de cada mes por adelantado.</p>
+              </div>
+              <div className="space-y-2">
+                <span className="font-bold text-buey-orange uppercase block">Actualización por Inflación</span>
+                <p>Los valores se revisarán de forma trimestral según el índice IPC para mantener el equilibrio y la calidad del servicio.</p>
+              </div>
             </div>
           </motion.div>
         </div>
