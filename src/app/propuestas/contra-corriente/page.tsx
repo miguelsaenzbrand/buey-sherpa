@@ -179,8 +179,8 @@ export default function ContraCorrientePropuesta() {
           <motion.div {...fadeIn} transition={{ delay: 0.3 }} className="flex items-center">
             <div className="aspect-[4/5] bg-white/5 w-full border border-white/5 relative group overflow-hidden">
               <Image 
-                src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=2070"
-                alt="Viñedo de Clima Frío"
+                src="/cc-botellas.webp"
+                alt="Botellas de Vino Contra Corriente"
                 fill
                 className="object-cover opacity-40 grayscale group-hover:grayscale-0 transition-all duration-1000"
               />
