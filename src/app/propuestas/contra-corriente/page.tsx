@@ -25,6 +25,21 @@ export default function ContraCorrientePropuesta() {
         </div>
         
         <motion.div 
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="mb-8"
+        >
+          <Image 
+            src="/cc-web-logo.png"
+            alt="Contra Corriente Logo"
+            width={240}
+            height={240}
+            className="grayscale brightness-150 contrast-100 opacity-90 object-contain"
+          />
+        </motion.div>
+
+        <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
