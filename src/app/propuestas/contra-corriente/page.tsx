@@ -172,7 +172,7 @@ export default function ContraCorrientePropuesta() {
               </div>
               <div className="p-8 border border-white/10 bg-white/[0.02]">
                 <h3 className="text-2xl font-black mb-4 uppercase tracking-tighter flex items-center gap-3"><Waves size={20} className="text-buey-orange" /> 2. Sinergia de Tráfico (PRG)</h3>
-                <p className="text-base opacity-60 font-light leading-relaxed">Capturar el tráfico calificado del lodge de pesca y transformarlo en embajadores y compradores recurrentes del club de vinos.</p>
+                <p className="text-base opacity-60 font-light leading-relaxed">Trasladar la autoridad de página y dirigir el tráfico de PRG a la web por medio de backlinks.</p>
               </div>
             </div>
           </motion.div>
