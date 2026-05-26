@@ -87,7 +87,7 @@ export default function ContraCorrientePropuesta() {
           <motion.div {...fadeIn} className="text-center space-y-8">
             <h2 className="text-4xl md:text-7xl font-serif italic font-light tracking-tighter">Diagnóstico de Superficie</h2>
             <div className="max-w-3xl mx-auto text-lg md:text-xl font-light leading-relaxed text-buey-white/70 space-y-6 text-left md:text-center">
-              <span className="text-xs tracking-[0.5em] text-buey-orange font-bold uppercase block text-center mb-4">Anexo: Diagnóstico y Oportunidades en tu Sitio Web</span>
+              <span className="text-xs tracking-[0.5em] text-buey-orange font-bold uppercase block text-center mb-4">Diagnóstico y Oportunidades en tu Sitio Web</span>
               <p>
                 Realizamos una auditoría técnica profunda sobre la web actual de <strong>Contra Corriente</strong> para entender qué está frenando el crecimiento de las ventas online. Detectamos que, si bien la marca tiene un gran potencial, la estructura actual de la página confunde a Google y puede frustrar a los usuarios.
               </p>
@@ -168,7 +168,7 @@ export default function ContraCorrientePropuesta() {
             <div className="space-y-8">
               <div className="p-8 border border-white/10 bg-white/[0.02]">
                 <h3 className="text-2xl font-black mb-4 uppercase tracking-tighter flex items-center gap-3"><Wine size={20} className="text-buey-orange" /> 1. SEO de Alta Gama</h3>
-                <p className="text-base opacity-60 font-light leading-relaxed">Posicionar las variedades estrella (Pinot Noir, Gewürztraminer) bajo términos de búsqueda premium que atraigan a coleccionistas y amantes del vino.</p>
+                <p className="text-base opacity-60 font-light leading-relaxed">Posicionar las cuatro páginas de cada variedad y la página de trade bajo términos de búsqueda (keywords) específicos que atraigan clientes. Dirigir conversiones desde esas páginas optimizadas.</p>
               </div>
               <div className="p-8 border border-white/10 bg-white/[0.02]">
                 <h3 className="text-2xl font-black mb-4 uppercase tracking-tighter flex items-center gap-3"><Waves size={20} className="text-buey-orange" /> 2. Sinergia de Tráfico (PRG)</h3>
@@ -255,17 +255,17 @@ export default function ContraCorrientePropuesta() {
                       Estrategia, SEO Técnico <br /> e Integración PRG
                     </>
                   ),
-                  detail: "Auditoría mensual, optimización on-page, keyword research de productos, SEO Local y estrategia de traspaso de autoridad desde Patagonia River Guides. (A cargo de Especialista SEO Senior)",
+                  detail: "Auditoría mensual, optimización on-page, keyword research de productos, SEO Local y estrategia de traspaso de autoridad desde Patagonia River Guides.",
                   price: "$216.000"
                 },
                 {
                   title: "Generación de Contenido",
-                  detail: "Planificación, investigación de temas de nicho vitivinícola/experiencias y redacción de 2 artículos extensos optimizados. (A cargo de Redactor SEO + Editor)",
+                  detail: "Planificación, investigación de temas de nicho vitivinícola/experiencias y redacción de 2 artículos extensos optimizados.",
                   price: "$132.000"
                 },
                 {
                   title: "Análisis y Reportes",
-                  detail: "Monitoreo de conversiones (ventas), tráfico cruzado entre plataformas y entrega de informe mensual de rendimiento. (A cargo de Account Manager)",
+                  detail: "Monitoreo de conversiones (ventas), tráfico cruzado entre plataformas y entrega de informe mensual de rendimiento.",
                   price: "$72.000"
                 }
               ].map((row, i) => (
