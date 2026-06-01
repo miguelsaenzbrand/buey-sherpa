@@ -135,12 +135,12 @@ export default function ContraCorrientePropuesta() {
               </p>
             </div>
             
-            <div className="relative w-40 h-24 self-start md:self-auto bg-white/[0.02] border border-white/5 rounded p-4 flex items-center justify-center">
+            <div className="relative w-40 h-32 md:w-48 md:h-40 self-start md:self-auto flex items-center justify-center transition-all duration-300 hover:scale-105">
               <Image 
-                src="/cc-web-logo.png" 
-                alt="Bodega Contra Corriente Logo" 
+                src="/cc-icon.png" 
+                alt="Bodega Contra Corriente Icono" 
                 fill
-                className="object-contain p-4 filter brightness-100 contrast-125"
+                className="object-contain filter brightness-100 contrast-125"
               />
             </div>
           </div>
