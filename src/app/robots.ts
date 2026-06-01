@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://bueysherpa.com/sitemap.xml',
+    sitemap: 'https://www.bueysherpa.com/sitemap.xml',
   };
 }

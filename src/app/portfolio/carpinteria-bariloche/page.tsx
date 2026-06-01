@@ -11,7 +11,7 @@ export default function CarpinteriaCaseStudy() {
     "name": "Cáceres & Addams: Oficio y Materia",
     "description": "Storytelling para una carpintería de autor en San Carlos de Bariloche. Un recorrido por el proceso artesanal y la filosofía del trabajo con madera.",
     "thumbnailUrl": [
-      "https://bueysherpa.com/carpinteria-thumb.png"
+      "https://www.bueysherpa.com/carpinteria-thumb.png"
     ],
     "uploadDate": "2022-05-26T12:00:00-03:00",
     "embedUrl": "https://player.vimeo.com/video/714287408"

@@ -11,7 +11,7 @@ export default function MorettiCaseStudy() {
     "name": "Destilería Moretti: Gin & Tonic en la Cumbre",
     "description": "Lanzamiento y posicionamiento de Gintonic en lata para Destilería Moretti en Bariloche.",
     "thumbnailUrl": [
-      "https://bueysherpa.com/moretti-thumb.png"
+      "https://www.bueysherpa.com/moretti-thumb.png"
     ],
     "uploadDate": "2022-05-27T12:00:00-03:00",
     "embedUrl": "https://player.vimeo.com/video/714600218"
