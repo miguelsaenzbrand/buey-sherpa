@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description: "Agencia de marketing en Patagonia especializada en estrategia integral, producción audiovisual y desarrollo web y posicionaiento.Comencemos el ascenso.",
   metadataBase: new URL('https://www.bueysherpa.com'),
   alternates: {
-    canonical: '/',
+    canonical: './',
   },
   keywords: ["Marketing de altura", "Agencia de marketing Patagonia", "Marketing Patagonia", "SEO", "Desarrollo Web", "Audiovisual", "Estrategia Digital"],
   openGraph: {
