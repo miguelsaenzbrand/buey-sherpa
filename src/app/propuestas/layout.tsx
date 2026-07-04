@@ -18,6 +18,12 @@ export default function PropuestasLayout({
 
   // Helper to determine the password & storage key depending on the current proposal
   const getPasswordAndKeyForPath = (path: string) => {
+    if (path.includes("esquel-turismo")) {
+      return {
+        password: "cerro-21",
+        storageKey: "buey_auth_esquel_turismo"
+      };
+    }
     const isContraCorriente = path.includes("contra-corriente");
     return {
       password: isContraCorriente ? "cerro-situacion" : "cerro-nahuel-pan",
