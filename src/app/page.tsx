@@ -244,6 +244,12 @@ export default function Home() {
               Contra Corriente
             </Link>
             <Link 
+              href="/propuestas/esquel-turismo"
+              className="text-2xl md:text-3xl font-serif italic font-light hover:text-buey-orange transition-colors duration-300"
+            >
+              Esquel Turismo
+            </Link>
+            <Link 
               href="#"
               className="text-2xl md:text-3xl font-serif italic font-light hover:text-buey-orange transition-colors duration-300"
             >
