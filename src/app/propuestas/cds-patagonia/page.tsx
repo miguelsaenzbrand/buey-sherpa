@@ -407,16 +407,16 @@ export default function PuebloCaraoPage() {
 
   const stories = [
     {
-      title: '"De la pala al plato"',
-      body: "El huésped sigue la ruta del compost de su cena hasta el tomate que se servirá esa noche.",
+      title: '"Farm to table"',
+      body: "Una familia cosecha por la mañana y lo ve servido en su plato para el almuerzo.",
     },
     {
       title: '"Lana del paisaje"',
       body: "Los suéteres de la tienda se hilaron de las ovejas que el huésped vio en el sendero.",
     },
     {
-      title: '"Botella infinita"',
-      body: "Cerveza en botella retornable, grabada para el huésped en vendimias y esquilas.",
+      title: '"Las tardes en el Pub"',
+      body: "Saborear una cerveza fresca con el aroma de las maltas en el aire.",
     },
     {
       title: '"Mapa vivo"',
