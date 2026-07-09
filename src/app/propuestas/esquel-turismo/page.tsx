@@ -488,9 +488,6 @@ export default function EsquelTurismoPropuesta() {
                     permite a cada operador ver cuánto negocio le aporta el
                     destino. Un activo que ninguna campaña tradicional ofrece.
                   </p>
-                  <p className="mt-6 text-sm leading-relaxed text-white/40">
-                    El detalle completo lo reservamos para la conversación.
-                  </p>
                 </Reveal>
               </div>
 
