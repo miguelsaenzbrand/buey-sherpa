@@ -36,4 +36,13 @@ export const projects: Project[] = [
     href: "/portfolio/factoria-concept-store",
     thumbnail: "/factoria-thumb.png",
   },
+  {
+    id: "the-wings",
+    title: "The Wings",
+    client: "Espartanos",
+    description: "Un micro documental que nos muestra en primera persona a Coco Oderigo explicando el proyecto Espartanos.",
+    tags: ["video"],
+    href: "/portfolio/the-wings",
+    thumbnail: "/the-wings-thumb.png",
+  },
 ];
