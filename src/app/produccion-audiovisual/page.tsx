@@ -9,8 +9,8 @@ import { projects } from "../../data/projects";
 export default function AudiovisualPage() {
   const filteredProjects = projects.filter(p => p.tags.includes("video"));
 
-  // ID de Vimeo para el Reel (se puede reemplazar por el ID definitivo del cliente)
-  const vimeoReelId = "714287408"; // Reemplazar con el ID del reel definitivo
+  // ID de Vimeo para el Reel
+  const vimeoReelId = "714590180"; // Reemplazar con el ID del reel definitivo
 
   return (
     <main className="min-h-screen bg-buey-dark text-buey-white p-8 md:p-24 selection:bg-buey-orange selection:text-buey-dark font-sans">
