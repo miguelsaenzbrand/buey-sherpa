@@ -69,7 +69,7 @@ export default function AudiovisualPage() {
               <span>REALIZACIÓN // DOCUMENTAL</span>
             </div>
             <h3 className="text-3xl md:text-5xl font-serif font-light tracking-tight">
-              Reel de Trabajos
+              Reel
             </h3>
             <p className="text-base md:text-lg text-buey-white/70 font-light leading-relaxed">
               Reel de trabajos de realización audiovisual en formato documental y micro-documental para medios periodísticos. Una mirada del territorio y la coyuntura, en todos los rincones de Argentina.
