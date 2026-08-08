@@ -26,7 +26,7 @@ export default function PropuestasLayout({
     }
     const isContraCorriente = path.includes("contra-corriente");
     return {
-      password: isContraCorriente ? "cerro-situacion" : "cerro-nahuel-pan",
+      password: isContraCorriente ? "cerro-situacion" : "refugio-base",
       storageKey: isContraCorriente ? "buey_auth_contra_corriente" : "buey_auth_cds_patagonia"
     };
   };
